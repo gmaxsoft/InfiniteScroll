@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Główne stylowanie kontenera */
+.infinite-scroll-container {
+    max-height: 80vh; /* Ograniczenie wysokości, aby w ogóle móc przewijać */
+    overflow-y: scroll; /* Włączenie pionowego przewijania */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f4f4f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylowanie pojedynczego posta */
+.post-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.post-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.post-item h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.post-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.post-item small {
+    display: block;
+    margin-top: 10px;
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* Stylowanie elementu triggerującego/ładowania */
+.loading-trigger {
+    height: 60px;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+    color: #007bff; /* Kolor przewodni */
+    border-top: 1px dashed #ccc;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #dc3545;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
